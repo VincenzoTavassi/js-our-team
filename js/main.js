@@ -92,11 +92,11 @@ const membri = [
 const cardListEl = document.getElementById('card-list');
 
 // CICLO CON PRINT DELLA CARD 
-for (membro of membri) {
+for (const membro of membri) {
 
     cardListEl.innerHTML += `
     				<div class="card m-2 p-0 col-3">
-					<img src="./img/${membro.img}" class="card-img-top" alt="...">
+					<img src="./img/${membro.img}" class="card-img-top" alt="${membro.nome}">
 					<div class="card-body">
 						<p class="card-text">${membro.getNome()} <br> ${membro.ruolo}</p>
 					</div>
