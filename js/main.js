@@ -30,9 +30,13 @@ const membri = [
         nome: "Wayne",
         cognome: "Barnett",
         ruolo: "Founder & CEO",
-        img: "wayne-barnett-founder-ceo.jpg",
+        img: "founder-ceo.jpg",
         getNome() {
             return this.nome + ' ' + this.cognome;
+        },
+        getImg() {
+            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            return risultato;
         }
     },
 
@@ -40,9 +44,13 @@ const membri = [
         nome: "Angela",
         cognome: "Caroll",
         ruolo: "Chief Editor",
-        img: "angela-caroll-chief-editor.jpg",
+        img: "chief-editor.jpg",
         getNome() {
             return this.nome + ' ' + this.cognome;
+        },
+        getImg() {
+            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            return risultato;
         }
     },
 
@@ -50,9 +58,13 @@ const membri = [
         nome: "Walter",
         cognome: "Gordon",
         ruolo: "Office Manager",
-        img: "walter-gordon-office-manager.jpg",
+        img: "office-manager.jpg",
         getNome() {
             return this.nome + ' ' + this.cognome;
+        },
+        getImg() {
+            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            return risultato;
         }
     },
 
@@ -60,9 +72,13 @@ const membri = [
         nome: "Angela",
         cognome: "Lopez",
         ruolo: "Social Media Manager",
-        img: "angela-lopez-social-media-manager.jpg",
+        img: "social-media-manager.jpg",
         getNome() {
             return this.nome + ' ' + this.cognome;
+        },
+        getImg() {
+            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            return risultato;
         }
     },
 
@@ -70,9 +86,13 @@ const membri = [
         nome: "Scott",
         cognome: "Estrada",
         ruolo: "Developer",
-        img: "scott-estrada-developer.jpg",
+        img: "developer.jpg",
         getNome() {
             return this.nome + ' ' + this.cognome;
+        },
+        getImg() {
+            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            return risultato;
         }
     },
 
@@ -80,13 +100,19 @@ const membri = [
         nome: "Barbara",
         cognome: "Ramos",
         ruolo: "Graphic Designer",
-        img: "barbara-ramos-graphic-designer.jpg",
+        img: "graphic-designer.jpg",
         getNome() {
             return this.nome + ' ' + this.cognome;
+        },
+        getImg() {
+            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            return risultato;
         }
     },
 
 ]
+
+console.log(membri[0].getImg());
 
 // ELEMENTI HTML 
 const cardListEl = document.getElementById('card-list');
@@ -96,7 +122,7 @@ for (const membro of membri) {
 
     cardListEl.innerHTML += `
     				<div class="card m-2 p-0 col-3">
-					<img src="./img/${membro.img}" class="card-img-top" alt="${membro.nome}">
+					<img src="./img/${membro.getImg()}" class="card-img-top" alt="${membro.nome}">
 					<div class="card-body">
 						<p class="card-text">${membro.getNome()} <br> ${membro.ruolo}</p>
 					</div>
