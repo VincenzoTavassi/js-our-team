@@ -35,7 +35,7 @@ const membri = [
             return this.nome + ' ' + this.cognome;
         },
         getImg() {
-            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            const risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
             return risultato;
         }
     },
@@ -49,7 +49,7 @@ const membri = [
             return this.nome + ' ' + this.cognome;
         },
         getImg() {
-            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            const risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
             return risultato;
         }
     },
@@ -63,7 +63,7 @@ const membri = [
             return this.nome + ' ' + this.cognome;
         },
         getImg() {
-            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            const risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
             return risultato;
         }
     },
@@ -77,7 +77,7 @@ const membri = [
             return this.nome + ' ' + this.cognome;
         },
         getImg() {
-            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            const risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
             return risultato;
         }
     },
@@ -91,7 +91,7 @@ const membri = [
             return this.nome + ' ' + this.cognome;
         },
         getImg() {
-            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            const risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
             return risultato;
         }
     },
@@ -105,14 +105,12 @@ const membri = [
             return this.nome + ' ' + this.cognome;
         },
         getImg() {
-            risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
+            const risultato = (this.nome + '-' + this.cognome + '-' + this.img).toLowerCase();
             return risultato;
         }
     },
 
 ]
-
-console.log(membri[0].getImg());
 
 // ELEMENTI HTML 
 const cardListEl = document.getElementById('card-list');
